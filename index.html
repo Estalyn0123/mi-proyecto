@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para mi persona favorita 💖</title>
+    <!-- Vinculamos nuestra hoja de estilos limpia -->
+    <link rel="stylesheet" href="ccs/estilos.css">
+</head>
+<body>
+
+    <!-- Sección de Bienvenida -->
+    <header class="hero">
+        <h1>¡Bienvenida a tu página especial mi amor! 🥰</h1>
+        <hr class="linea-amor">
+        <p>Creé este rincón en el internet especialmente para ti. Gracias por cada sonrisa y por estos 4 años maravillosos juntos. 💘</p>
+    </header>
+
+    <!-- Contador configurado desde el 30 de agosto de 2022 -->
+    <section class="contador-amor">
+        <h3>Nuestro tiempo amándonos ⏳💖</h3>
+        <div id="tiempo-juntos">Calculando nuestro amor...</div>
+    </section>
+
+    <!-- Sección de la Foto Destacada en el Inicio -->
+    <section class="galeria">
+        <h2>Nuestro momento favorito 📸💕</h2>
+        
+        <div class="tarjeta-foto">
+            <div class="caja-portarretratos">
+                <img src="img/con-maria-fotos/foto (12).jpg" alt="Nosotros dos" class="foto-romantica">
+            </div>
+            <p class="mensaje-foto">Cada instante a tu lado es el mejor. Te amo infinito. 👩‍❤️‍👨✨</p>
+        </div>
+
+        <div style="margin-top: 30px;">
+            <a href="galeria.html" class="boton-magico">Ver nuestra galería completa (42 fotos y 6 videos) 📸✨</a>
+        </div>
+    </section>
+
+    <!-- Sección NUEVA: Promesa de Amor -->
+    <section class="seccion-amor">
+        <h2>Nuestra Promesa de Amor 💍✨</h2>
+        <p style="background: transparent; box-shadow: none; font-size: 1.1rem; text-align: left; padding: 0; display: block;">
+            Han pasado 4 años llenos de risas, complicidad, apoyo incondicional y un amor que crece cada día más. Prometo seguir cuidando de ti, celebrando tus logros y estando a tu lado en cada paso que demos. Eres y siempre serás mi más bonito destino. 🌍❤️
+        </p>
+    </section>
+
+    <!-- Sección de Razones por las que la amas -->
+    <section class="seccion-amor">
+        <h2>Razones por las que te amo 🌹</h2>
+        <ul class="lista-razones">
+            <li>✨ Por tu hermosa sonrisa que alegra todos mis días.</li>
+            <li>🥺 Por cómo me apoyas y crees en mí siempre.</li>
+            <li>💖 Porque cada momento a tu lado es una aventura perfecta.</li>
+        </ul>
+
+        <button class="boton-magico" onclick="alert('¡Te amo con todo mi corazón, eres la mejor novia del mundo mundial! 👩‍❤️‍👨💖')">Haz clic aquí para una sorpresa 💌</button>
+    </section>
+
+    <!-- Script del contador de tiempo exacto -->
+    <script>
+        const fechaInicio = new Date("2022-08-30T00:00:00");
+
+        function actualizarContador() {
+            const ahora = new Date();
+            const diferencia = ahora - fechaInicio;
+
+            const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+            const horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
+            const segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
+
+            document.getElementById("tiempo-juntos").innerHTML = 
+                `❤️ ${dias} días, ${horas} horas, ${minutos} minutos y ${segundos} segundos amándote ❤️`;
+        }
+
+        setInterval(actualizarContador, 1000);
+        actualizarContador();
+    </script>
+
+</body>
+</html>

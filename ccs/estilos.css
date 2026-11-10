@@ -1,0 +1,174 @@
+body {
+    background: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%) !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: #fff;
+    padding: 40px 20px;
+    margin: 0;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+.linea-amor {
+    width: 50%;
+    border: none;
+    height: 3px;
+    background-color: white;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+p {
+    font-size: 1.2rem;
+    background: rgba(255, 255, 255, 0.2);
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.galeria {
+    margin-top: 30px;
+}
+
+.galeria h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+/* Tarjeta tipo polaroid */
+.tarjeta-foto {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 15px;
+    border-radius: 25px;
+    display: inline-block;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    margin: 10px;
+}
+
+.caja-portarretratos {
+    width: 220px !important;
+    height: 280px !important;
+    max-width: 220px !important;
+    max-height: 280px !important;
+    margin: 0 auto 10px auto !important;
+    border-radius: 15px !important;
+    overflow: hidden !important;
+    border: 4px solid white !important;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2) !important;
+    background-color: #fff !important;
+}
+
+.foto-romantica {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+}
+
+.mensaje-foto {
+    font-size: 0.95rem;
+    font-style: italic;
+    background: transparent !important;
+    box-shadow: none !important;
+    padding: 5px 0 0 0 !important;
+    margin: 0;
+    color: #fff;
+}
+
+/* Contador de Amor */
+.contador-amor {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 20px;
+    margin: 30px auto;
+    max-width: 550px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.contador-amor h3 {
+    margin-top: 0;
+    font-size: 1.4rem;
+}
+
+#tiempo-juntos {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+/* Sección de Razones y Promesas */
+.seccion-amor {
+    margin-top: 30px;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    display: inline-block;
+    max-width: 550px;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.seccion-amor h2 {
+    color: #fff;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.lista-razones {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+}
+
+.lista-razones li {
+    background: rgba(255, 255, 255, 0.2);
+    margin: 8px 0;
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Botón mágico */
+.boton-magico {
+    display: inline-block;
+    background-color: #ff3366;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: background 0.3s ease, transform 0.2s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.boton-magico:hover {
+    background-color: #e60039;
+    transform: scale(1.08);
+}
+
+/* Cuadrícula para la galería múltiple */
+.seccion-galeria-multiple {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 10px;
+}
+
+.video-romantico {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+}
